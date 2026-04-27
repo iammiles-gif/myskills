@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "collection": "myskills - Hsieh's Claude Skills for SIVS",
+    "owner": "iammiles-gif",
+    "repository": "https://github.com/iammiles-gif/myskills",
+    "lastUpdated": "2026-04-27",
+    "totalSkills": 13,
+    "license": "MIT"
+  },
+  "skillsByCategory": {
+    "教學與評量": [
+      {
+        "id": "exam-designer",
+        "name": "Exam Designer — 英語考卷設計",
+        "version": "1.0.0",
+        "description": "專門設計英語（A2–B1 CEFR）考卷的技能。根據英文單字表、課文、文法句型自動生成選擇題、克漏字、閱讀測驗。可搭配 docx-teaching 輸出 Word 檔。",
+        "path": "exam-designer/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/exam-designer/SKILL.md",
+        "tags": ["education", "english", "testing", "exam", "A2-B1", "CEFR"],
+        "triggers": ["出考題", "設計考卷", "題目設計", "克漏字", "閱讀測驗", "選擇題", "design exam", "create test", "cloze test"],
+        "inputs": ["英文單字表", "英文課文", "英文文法句型"],
+        "outputs": ["考卷題目", "Word 檔"],
+        "relatedSkills": ["docx-teaching"]
+      },
+      {
+        "id": "docx-teaching",
+        "name": "DOCX Teaching — SIVS 教學文件製作",
+        "version": "1.0.0",
+        "description": "建立、編輯、管理 SIVS 教學流程中的 Word 文件。製作講義、學習單、成績單、公告、證書、批量文件生成。支援 Google Apps Script 自動化。",
+        "path": "docx-teaching/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/docx-teaching/SKILL.md",
+        "tags": ["education", "teaching", "docx", "SIVS", "administrative", "materials"],
+        "triggers": ["Word doc", "講義", "學習單", "成績單", "公告", "證書", "create document", "lesson handout"],
+        "inputs": ["教學內容", "學生資料", "成績表"],
+        "outputs": ["Word 文件", ".docx 檔"],
+        "integrations": ["Google Apps Script", "Google Workspace"],
+        "relatedSkills": ["exam-designer", "gas-webapp-builder"]
+      }
+    ],
+    "開發與自動化": [
+      {
+        "id": "gas-webapp-builder",
+        "name": "GAS Web App Builder — Google Apps Script 網頁應用",
+        "version": "2.0.0",
+        "description": "使用 Google Apps Script 建置前後端整合的網頁應用。即時數據儀表板、教學互動工具、Sheet 自動寫入、API 代理、教學遊戲化平台。處理 CORS、302 重定向、JSON parse 等常見問題。",
+        "path": "gas-webapp-builder/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/gas-webapp-builder/SKILL.md",
+        "tags": ["development", "GAS", "webapp", "automation", "backend", "API", "dashboard", "interactive"],
+        "triggers": ["GAS", "Web App", "網頁應用", "監控頁面", "儀表板", "自動寫到 Sheet", "課堂互動工具"],
+        "inputs": ["需求說明", "資料來源", "互動邏輯"],
+        "outputs": ["部署 URL", "GAS 程式碼", "HTML 前端"],
+        "techStack": ["Google Apps Script", "HTML/CSS/JavaScript", "Google Sheets API"],
+        "relatedSkills": ["docx-teaching", "notion-daily-scheduler"]
+      },
+      {
+        "id": "notion-daily-scheduler",
+        "name": "Notion Daily Scheduler — Notion 每日自動排程",
+        "version": "1.5.0",
+        "description": "設計與建置「每日自動寫入 Notion 資料庫」的排程工作流。包含防重複架構、Notion MCP 工具整合、Cowork Scheduled Task prompt 設計。適用於書摘、新聞摘要、學習筆記、專案探索等每日自動生成的內容。",
+        "path": "notion-daily-scheduler/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/notion-daily-scheduler/SKILL.md",
+        "tags": ["automation", "Notion", "scheduling", "Cowork", "daily", "content-generation", "deduplication"],
+        "triggers": ["每日排程", "Notion", "自動寫入", "Cowork schedule", "防重複", "daily automation"],
+        "features": ["防重複機制", "Notion MCP 整合", "Cowork 排程", "跨 session 記憶"],
+        "useCases": ["書摘自動摘取", "新聞摘要", "學習筆記", "日誌記錄", "專案發現"],
+        "relatedSkills": ["gas-webapp-builder"]
+      }
+    ],
+    "設計系統": [
+      {
+        "id": "ckmdesign",
+        "name": "Design — 綜合品牌設計系統",
+        "version": "3.0.0",
+        "description": "綜合設計系統：Logo 設計（55 種風格）、企業識別系統 (CIP, 50 項交付物)、HTML 簡報 (Chart.js)、多平台 banner（社群、廣告、網頁、列印）、SVG icon 設計（15 種風格）、社群貼文自動化。",
+        "path": "ckmdesign/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/ckmdesign/SKILL.md",
+        "tags": ["design", "branding", "logo", "CIP", "banner", "icon", "social", "comprehensive"],
+        "actions": ["design logo", "create CIP", "generate mockups", "build slides", "design banner", "generate icon", "create social photos"],
+        "logoStyles": 55,
+        "platforms": ["Facebook", "Twitter", "LinkedIn", "YouTube", "Instagram", "Pinterest", "TikTok", "Threads", "Google Ads"],
+        "outputs": ["PNG/SVG", "PDF mockups", "HTML 簡報", "社群貼文"],
+        "relatedSkills": ["ckmdesign-system", "ckmbrand", "ckmbanner-design", "ckmui-styling"]
+      },
+      {
+        "id": "ckmdesign-system",
+        "name": "Design System — 設計 Token 架構與元件規格",
+        "version": "2.0.0",
+        "description": "設計系統核心：三層 token 架構 (primitive→semantic→component)、CSS 變數、間距與排版尺度、元件規格、策略簡報生成。建立設計一致性與可擴展性。",
+        "path": "ckmdesign-system/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/ckmdesign-system/SKILL.md",
+        "tags": ["design", "tokens", "system", "design-system", "CSS", "component-specs"],
+        "core": ["Token 架構", "CSS 變數", "排版尺度", "顏色系統", "元件規格"],
+        "outputs": ["Token 定義", "CSS 檔案", "元件庫", "設計文檔"],
+        "relatedSkills": ["ckmdesign", "ckmui-styling"]
+      },
+      {
+        "id": "ckmbrand",
+        "name": "Brand — 品牌聲音與視覺識別",
+        "version": "1.5.0",
+        "description": "品牌策略：品牌聲音、視覺識別、訊息框架、資產管理、品牌一致性。建立與維持品牌認知度和信任度。",
+        "path": "ckmbrand/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/ckmbrand/SKILL.md",
+        "tags": ["branding", "brand-voice", "visual-identity", "messaging", "brand-consistency"],
+        "triggers": ["branded content", "tone of voice", "marketing assets", "brand compliance", "style guides"],
+        "components": ["品牌聲音", "視覺識別", "訊息框架", "資產庫", "一致性指南"],
+        "relatedSkills": ["ckmdesign", "ckmbanner-design"]
+      },
+      {
+        "id": "ckmbanner-design",
+        "name": "Banner Design — 多平台 Banner 設計系統",
+        "version": "2.0.0",
+        "description": "為社群媒體、廣告、網頁 hero、創意資產、列印設計 banner。多種美術方向與 AI 視覺化生成。22 種設計風格。",
+        "path": "ckmbanner-design/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/ckmbanner-design/SKILL.md",
+        "tags": ["design", "banner", "social-media", "ads", "visual", "creative"],
+        "platforms": ["Facebook", "Twitter/X", "LinkedIn", "YouTube", "Instagram", "Google Display", "website hero", "print"],
+        "styles": 22,
+        "styleList": ["minimalist", "gradient", "bold typography", "photo-based", "illustrated", "geometric", "retro", "glassmorphism", "3D", "neon", "duotone", "editorial", "collage"],
+        "outputs": ["PNG", "SVG", "多尺寸變體"],
+        "relatedSkills": ["ckmdesign", "ckmbrand"]
+      },
+      {
+        "id": "ckmslides",
+        "name": "Slides — HTML 策略簡報系統",
+        "version": "1.0.0",
+        "description": "建立策略性 HTML 簡報，整合 Chart.js、設計 token、響應式布局、文案公式、情境化簡報策略。",
+        "path": "ckmslides/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/ckmslides/SKILL.md",
+        "tags": ["design", "presentation", "HTML", "slides", "Chart.js", "data-visualization"],
+        "features": ["Chart.js 整合", "設計 token", "響應式設計", "文案策略", "情境化簡報"],
+        "outputs": ["HTML 簡報", "可匯出 PDF"],
+        "relatedSkills": ["ckmdesign-system", "ui-ux-pro-max"]
+      },
+      {
+        "id": "ckmui-styling",
+        "name": "UI Styling — shadcn/ui + Tailwind 無障礙 UI 元件",
+        "version": "2.5.0",
+        "description": "使用 shadcn/ui (Radix UI + Tailwind) 建立優美、無障礙的使用者介面。Tailwind CSS utility-first 設計、Canvas 視覺設計、預加載字體、響應式布局、暗色模式。",
+        "path": "ckmui-styling/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/ckmui-styling/SKILL.md",
+        "tags": ["design", "UI", "components", "shadcn/ui", "Tailwind", "accessibility", "responsive"],
+        "triggers": ["build UI", "user interface", "design components", "responsive layout", "dark mode", "accessible"],
+        "techStack": ["shadcn/ui", "Radix UI", "Tailwind CSS", "Canvas"],
+        "components": ["dialogs", "dropdowns", "forms", "tables", "buttons", "cards"],
+        "features": ["暗色模式", "響應式設計", "無障礙支援", "主題客製化", "預加載字體"],
+        "relatedSkills": ["ckmdesign-system", "ui-ux-pro-max"]
+      }
+    ],
+    "工具與推薦": [
+      {
+        "id": "product-recommender",
+        "name": "Product Recommender — 智慧商品推薦系統",
+        "version": "1.0.0",
+        "description": "根據使用者需求智慧推薦商品。整合網路爬蟲、口碑資料、內置知識庫。根據評分、評論數、使用者評價、專家推薦等多維度資料生成排序清單。",
+        "path": "product-recommender/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/product-recommender/SKILL.md",
+        "tags": ["tools", "recommendation", "shopping", "product", "e-commerce"],
+        "triggers": ["推薦", "有什麼好", "我該買什麼", "有沒有推薦的", "怎樣選擇", "什麼牌子好", "CP值高的"],
+        "factors": ["評分", "評論數", "使用者評價", "專家推薦", "CP值", "場景適配"],
+        "inputs": ["場景描述", "預算", "個人偏好"],
+        "outputs": ["推薦清單", "對比分析", "購買指南"]
+      },
+      {
+        "id": "price-comparison",
+        "name": "Price Comparison — 跨平台商品比價系統",
+        "version": "1.0.0",
+        "description": "自動跨平台搜尋與比對商品價格。涵蓋台灣電商、國際平台、垂直商城、二手市場。整理價格資訊、運費、折扣、庫存等重要因素，生成清晰比較表格。",
+        "path": "price-comparison/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/price-comparison/SKILL.md",
+        "tags": ["tools", "e-commerce", "shopping", "price", "comparison"],
+        "triggers": ["比價", "比較價格", "找最便宜", "怎樣最省", "哪裡便宜", "價格比較"],
+        "platforms": ["台灣電商", "國際平台", "垂直商城", "二手市場", "主要零售商"],
+        "factors": ["商品價格", "運費", "折扣", "庫存", "評價"],
+        "outputs": ["比較表格", "最佳購買方案", "省錢建議"]
+      }
+    ],
+    "設計智能": [
+      {
+        "id": "ui-ux-pro-max",
+        "name": "UI/UX Pro Max — UI/UX 設計智能系統",
+        "version": "2.0.0",
+        "description": "UI/UX 設計智能系統：50+ 設計風格、161 色板、57 字體配對、161 產品類型、99 UX 指南、25 圖表類型。支援 10 個技術棧 (React、Vue、Flutter 等)。整合 shadcn/ui MCP 元件搜尋。",
+        "path": "ui-ux-pro-max/SKILL.md",
+        "rawUrl": "https://raw.githubusercontent.com/iammiles-gif/myskills/main/ui-ux-pro-max/SKILL.md",
+        "tags": ["design", "UI/UX", "design-intelligence", "components", "web", "mobile"],
+        "triggers": ["plan UI", "build interface", "design component", "UI/UX review", "improve interface"],
+        "styles": 50,
+        "colorPalettes": 161,
+        "fontPairings": 57,
+        "productTypes": 161,
+        "uxGuidelines": 99,
+        "chartTypes": 25,
+        "techStacks": ["React", "Next.js", "Vue", "Svelte", "SwiftUI", "React Native", "Flutter", "Tailwind", "shadcn/ui", "HTML/CSS"],
+        "elements": ["button", "modal", "navbar", "sidebar", "card", "table", "form", "chart"],
+        "styles": ["glassmorphism", "claymorphism", "minimalism", "brutalism", "neumorphism", "bento grid", "dark mode", "responsive", "skeuomorphism", "flat design"],
+        "relatedSkills": ["ckmui-styling", "ckmdesign-system"]
+      }
+    ]
+  },
+  "usageGuide": {
+    "quickStart": [
+      {
+        "step": 1,
+        "title": "選擇合適的 Skill",
+        "description": "根據任務選擇一個或多個 skill，查看其 description 和 triggers"
+      },
+      {
+        "step": 2,
+        "title": "複製 Raw URL",
+        "description": "從本索引複製 skill 的 rawUrl，格式：https://raw.githubusercontent.com/.../SKILL.md"
+      },
+      {
+        "step": 3,
+        "title": "提供給 Claude",
+        "description": "告訴 Claude 使用該 skill：'請使用這個 skill：[URL]，然後...'"
+      },
+      {
+        "step": 4,
+        "title": "指定任務",
+        "description": "清楚描述你的需求，Claude 會依據 skill 定義執行"
+      }
+    ],
+    "bestPractices": [
+      "查看 skill 的 'triggers' 確認是否符合你的用途",
+      "檢查 'relatedSkills' 了解可搭配使用的其他 skill",
+      "根據 'inputs' 和 'outputs' 準備資料與預期結果",
+      "對於複雜任務，可組合多個相關 skill"
+    ]
+  },
+  "skilltree": {
+    "教學核心": {
+      "基礎": ["exam-designer", "docx-teaching"],
+      "進階": ["gas-webapp-builder", "notion-daily-scheduler"]
+    },
+    "設計核心": {
+      "基礎": ["ckmdesign", "ckmui-styling"],
+      "進階": ["ckmdesign-system", "ckmbrand", "ckmslides"],
+      "專門": ["ckmbanner-design", "ui-ux-pro-max"]
+    },
+    "工具應用": {
+      "日常": ["product-recommender", "price-comparison"]
+    }
+  }
+}
